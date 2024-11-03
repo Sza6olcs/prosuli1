@@ -20,19 +20,21 @@
         <p><h1>Regisztráció</h1></p>
         <div>
             <label for="input">Név</label><br>
-            <input type="text" name="input">
+            <input type="text" name="input" required>
         </div>
         <div>
-            <label for="input">Email</label><br>
-            <input type="email" name="input">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" required>
         </div>
         <div>
             <label for="date">Születési idő</label><br>
-            <input type="date" name="birthdate" id="birthdate">
+            <input type="date" name="birthdate" id="birthdate" required>
         </div>
         <div>
-
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Elfogadom az <abbr title="Általános Szerződési Feltételek">ÁSzF</abbr>-t</label>
         </div>
+        <input type="submit" value="Tovább">
     </form>
 </body>
 </html>
