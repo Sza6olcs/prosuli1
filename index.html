@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github</title>
+    <title>SVG</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Github</h1>
-    <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, quam corporis. Id magnam labore numquam totam error necessitatibus ratione consectetur, sapiente sed? Corporis fuga maxime aliquid sit placeat eum iste vitae temporibus. Numquam possimus totam saepe rerum aliquid unde velit repudiandae, corporis, commodi veritatis neque vitae aspernatur perferendis incidunt doloribus porro laborum! Veniam accusamus est maxime accusantium, ab velit, magnam veritatis alias quasi doloribus reprehenderit corporis quisquam delectus quas cupiditate id quibusdam corrupti quod incidunt explicabo voluptates repudiandae eligendi minus. Dolores illo dolorum facilis. Voluptas ad cupiditate accusantium, esse soluta a libero non minima optio at nesciunt voluptate incidunt tenetur porro sequi explicabo fugiat deserunt officiis! Perspiciatis atque temporibus aspernatur nostrum.
-    </p>
-    <ul>
-        <li>egy</li>
-        <li>kettő</li>
-        <li>három</li>
-        <li>négy</li>
-    </ul>
-    <form action="index.html">  
-        <p><h1 class="reg">Regisztráció</h1></p>
-        <div>
-            <label for="input">Név</label><br>
-            <input type="text" name="input" required>
-        </div>
-        <div>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" required>
-        </div>
-        <div>
-            <label for="date">Születési idő</label><br>
-            <input type="date" name="birthdate" id="birthdate" required>
-        </div>
-        <div>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox">Elfogadom az <abbr title="Általános Szerződési Feltételek">ÁSzF</abbr>-t</label>
-        </div>
-        <input type="submit" value="Tovább" required>
-    </form>
+    <h1>SVG</h1>
+
+<svg width="200" height="250">
+    <text x="40" y="30" fill="red" transform="rotate(150 100,100)">SVG képalkotás</text>
+</svg>
+
+<hr>
+    <svg width="400" height="200">
+        <polyline points="10,10 40,50 100,100 160,130 100,200" fill="none" stroke="blue"/>
+    </svg>
+
+<hr> 
+    <svg width="400" height="400">
+        <polygon points= "25,25 25,350 150,300 200,220 350,80" />
+    </svg>
+<hr>
+    <svg width="400" height="400">
+        <polygon points="200,10 100,300 300,300" fill="lime" stroke="purple" stroke-width="1"/>
+        
+    </svg>
+
+<hr>
+    <svg width="400" height="150">
+        <ellipse cx="200" cy="75" rx="100" ry="70" stroke="blue" stroke-width="3" fill="yellow"/>
+    </svg>
+
+<hr>
+    <svg width="500" height="150">
+        <rect width="100" height="50" x=70 y="30" rx="10" stroke="black" stroke-width="3" fill="red" fill-opacity="0.7"/>
+        <circle cx="170" cy="80" r="25" stroke="black" fill-opacity="0.7"/>
+    </svg>
+    <hr>
+    <svg width="150" height="150">
+        <circle cx="75" cy="75" r="30" stroke="red" stroke-width="3" 
+        fill="green" >
+    </svg>
+<hr>
+    <h1 class="feladat" id="f1">Feladat</h1>
+        <svg class="feladat">
+            <ellipse cx="140" cy="90" rx="120" ry="15"  fill="purple"/>
+            <ellipse cx="130" cy="75" rx="100" ry="10"  fill="green"/>
+            <ellipse cx="120" cy="65" rx="80"  ry="8"   fill="yellow"/>
+        </svg>
+<hr>
+    <h1 class="feladat" id="f2">Feladat 2</h1>
+        <svg class="feladat" width="220" height="220">
+            <polygon points="100,10 40,200 190,80 10,80 160,200" fill="lime" stroke="purple" stroke-width="4"/>
+        </svg>
+
+
 </body>
 </html>
