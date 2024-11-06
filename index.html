@@ -8,6 +8,32 @@
 </head>
 <body>
     <h1>SVG</h1>
+   
+<hr>
+
+    <svg width="400" height="200">
+        <defs>
+            <radialGradient id="radialGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:red;stop-opacity:1" />
+                <stop offset="60%" style="stop-color:yellow;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:green;stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        <ellipse cx="200" cy="100" rx="150" ry=70 fill="url(#radialGradient)" />
+    </svg>
+<hr>
+    <svg width="400" height="200">
+        <defs>
+            <linearGradient id="liearisatmenet" x1="10%" y1="30%" x2="90%" y2="20%">
+                <stop offset="0%" style="stop-color:red;stop-opacity:1" />
+                <stop offset="70%" style="stop-color:blue;stop-opacity:0.3" />
+                <stop offset="100%" style="stop-color:yellow;stop-opacity:0.7" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="200" cy="100" rx="150" ry=70 fill="url(#liearisatmenet)"/>
+    </svg>
+
+<hr>
 
 <svg width="200" height="250">
     <text x="40" y="30" fill="red" transform="rotate(150 100,100)">SVG képalkotás</text>
@@ -55,7 +81,42 @@
         <svg class="feladat" width="220" height="220">
             <polygon points="100,10 40,200 190,80 10,80 160,200" fill="lime" stroke="purple" stroke-width="4"/>
         </svg>
+<hr>
+    <h1 class="feladat" id="f3">Feladat 3</h1>
+        <svg class="feladat" width="400" height="220">
+            <defs>
+                <radialGradient id="radialGradient2"  cx="50%" cy="50%" r="50%" fx="50%" fy="50%" fr="0%">
+                    <stop offset="0%" style="stop-color:white;stop-opacity:0.7" />
+                    <stop offset="5%" style="stop-color:yellow;stop-opacity:0.9" />
+                    <stop offset="40%" style="stop-color:rgb(56, 145, 175);stop-opacity:0.7" />
+                    <stop offset="60%" style="stop-color:rgb(56, 145, 175);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:red;stop-opacity:1"   />
+                </radialGradient>
+            </defs>
+            <circle cx="200" cy="100" r="150" fill="url(#radialGradient2)" />
+            <ellipse cx="200" cy="105" rx="205" ry=120 fill= "none"  stroke="lightgrey" stroke-width="120"/>
+        </svg>
 
+<hr>
+
+<svg class="feladat" width="400" height="220">
+    <defs>
+        <clipPath id="one">
+            <ellipse cx="200" cy="105" rx="150" ry="60" />
+        </clipPath>
+    </defs>
+    <defs>
+        <radialGradient id="radialGradient2"  cx="50%" cy="50%" r="50%" fx="50%" fy="50%" fr="0%">
+            <stop offset="0%" style="stop-color:white;stop-opacity:0.7" />
+            <stop offset="5%" style="stop-color:yellow;stop-opacity:0.9" />
+            <stop offset="40%" style="stop-color:rgb(56, 145, 175);stop-opacity:0.7" />
+            <stop offset="60%" style="stop-color:rgb(56, 145, 175);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:red;stop-opacity:1"   />
+        </radialGradient>
+    </defs>
+    <circle clip-path="url(#one)" cx="200" cy="100" r="150" fill="url(#radialGradient2)" />
+    
+</svg>
 
 </body>
 </html>
