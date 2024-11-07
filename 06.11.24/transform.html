@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transzformációk</title>
+    <style> #trans {
+        width: 500px;
+        border: 1px solid blue;
+        background-color: lightblue;
+        transform: translateY(100px, 50px);}
+        #rot { 
+            width: 300px; 
+            background-color: lightslategray; 
+            transform: rotate(-45deg); }
+        #scale { 
+        width: 300px; 
+        background-color: lightcoral; 
+        transform: scale(1,0.5);} 
+    
+        #skew { 
+            width: 350px; 
+            background-color: lightgreen; 
+            transform: skew(-20deg);}
+
+        #matr { 
+            width: 300px; 
+            background-color: lightgoldenrodyellow; 
+            /* matrix: scalex, skewy, skewx, scaley, translatex, translatey */
+            transform: matrix(1.5, 0.5, 0, 1, 125, 50);
+    }
+        #rot3d { 
+        width: 300px; 
+        background-color: lightcoral; 
+        transform: rotatey(45deg);
+
+    }
+        #trans1 {
+            width: 100px;
+            border: 1px solid green;
+            transition: width 3s ease-in-out 2s, border 4s;
+            
+        }
+        #trans1:hover {
+            width: 300px;
+            border: 5px dotted red;
+            transform: translateY(100px, 50px);
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS tranzíciók</h1>
+    <div id="trans1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi unde laboriosam optio hic asperiores illum mollitia tenetur adipisci.
+
+    </div>
+
+    <h1>2d transzfotmációk</h1>
+
+        <h2>Transzformációs mátrix</h2>
+
+        <div id="matr">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis dolore saepe quis voluptates sapiente voluptatem. Placeat vel, ad soluta repellendus minima fuga.
+        </div>
+
+
+        <h2>Skew</h2>
+
+        <div id="skew">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem aspernatur maxime corrupti tempora perspiciatis quas aperiam beatae animi? Sunt quod id fuga dolores esse ad iusto neque, accusamus maxime pariatur dicta odio autem vero veniam tempore minima. Aspernatur veritatis ab ratione ipsa ea officiis. Totam ratione molestias nostrum reprehenderit.
+        </div>
+
+        <h2>Scale</h2>
+
+        <div id="scale">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem aspernatur maxime corrupti tempora perspiciatis quas aperiam beatae animi? Sunt quod id fuga dolores esse ad iusto neque, accusamus maxime pariatur dicta odio autem vero veniam tempore minima. Aspernatur veritatis ab ratione ipsa ea officiis. Totam ratione molestias nostrum reprehenderit.
+        </div>
+        <h2>3d Rotáció</h2>
+
+        <div id="rot3d"> 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, error eveniet animi aliquam fuga veritatis labore cumque distinctio mollitia voluptate quae. 
+
+        </div>
+        
+        <h2>Rotáció</h2>
+
+        <div id="rot">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem aspernatur maxime corrupti tempora perspiciatis quas aperiam beatae animi? Sunt quod id fuga dolores esse ad iusto neque, accusamus maxime pariatur dicta odio autem vero veniam tempore minima. Aspernatur veritatis ab ratione ipsa ea officiis. Totam ratione molestias nostrum reprehenderit.
+        </div>
+
+        <h2>Transzláció</h2>
+
+        <div id="trans">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem aspernatur maxime corrupti tempora perspiciatis quas aperiam beatae animi? Sunt quod id fuga dolores esse ad iusto neque, accusamus maxime pariatur dicta odio autem vero veniam tempore minima. Aspernatur veritatis ab ratione ipsa ea officiis. Totam ratione molestias nostrum reprehenderit.
+        </div>
+    <hr>
+        <h2>Feladat</h2>
+
+</body>
+</html>
